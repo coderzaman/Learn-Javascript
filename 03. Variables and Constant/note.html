@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Basics</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <h4 class="fs-4 mt-4">Variable</h4>
+            <p>We can use var and let for declar a variable in javascript. var and let have some different. We can learn
+                it after ES6 lesson</p>
+            <p class="mb-0"><b>Declare a Variable</b></p>
+            <code class="mb-3">
+                var myName = "Aktaruzzaman";<br>
+                var number = 1;
+            </code>
+            <p class="mb-0"><b>Reassign Variable</b></p>
+            <code class="mb-3">
+                var myName = "Aktaruzzaman";<br>
+                myName = 35;<br>
+                console.log(myName);<br><br>
+                <b>ouput:</b>
+                35
+            </code>
+
+            <p class="mb-0"><b>Assign Variable in Another Variable</b></p>
+            <code class="mb-3">
+                var1 = 10; <br>
+                var2 = 30; <br>
+                var1 = var2; <br>
+                console.log(var1, var2);
+                <br><br>
+                <b>ouput: </b>
+                <span>10 10</span> 
+            </code>
+
+            <p class="mb-0"><b>JavaScript Identifiers(Rules)</b></p>
+            <pre>
+    All JavaScript variables must be identified with unique names.
+    These unique names are called identifiers.
+    Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+
+    The general rules for constructing names for variables (unique identifiers) are:
+
+    * Names can contain letters, digits, underscores, and dollar signs.
+    * Names must begin with a letter.
+    * Names can also begin with $ and _ (but we will not use it in this tutorial).
+    * Names are case sensitive (y and Y are different variables).
+    * Reserved words (like JavaScript keywords) cannot be used as names.
+            </pre>
+
+            <p class="mb-0"><b>JavaScript Identifiers(Rules)</b></p>
+            <pre>
+    * The const keyword was introduced in ES6 (2015)
+    * Variables defined with const cannot be Redeclared
+    * Variables defined with const cannot be Reassigned
+    * Variables defined with const have Block Scope
+<b>Always declare a variable with const when you know that the value should not be changed.</b>
+            </pre>
+
+            <b>Example:</b>
+            <p class="mb-1">Correct Example:</p>
+            <code>
+                const PI = 3.14159265359
+            </code>
+
+            <p class="mb-1">Incorrect Example:</p>
+            <code>
+                const PI = 3.141592653589793;<br>
+                PI = 3.14;      // This will give an error <br>
+                PI = PI + 10;   // This will also give an error <br>
+            </code>
+            <p class="m-0 mt-3"><b>Keywords:</b></p>
+            <p>In programming, a keyword is a word with a specific meaning and purpose that is reserved by a programming language. Keywords are used in the syntax of a program to define its structure and flow, and to specify the operations it should perform. They are also known as reserved words.</p>
+        </div>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <p></p>
+</body>
+
+</html>
