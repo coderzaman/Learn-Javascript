@@ -418,3 +418,86 @@ reTest(re,str);
 
 str = "Hellow WOrsadf";
 reTest(re,str);
+
+
+// Word Boundary
+re = /Hello\b/;
+str = "Hello world";
+
+reTest(re,str);
+
+str = "asfdsaHelloasfd world";
+reTest(re,str);
+
+str = "&&Hello&&, world";
+reTest(re,str);
+
+
+
+// Assertion 
+re =/x(?=y)/; //Matches x only if x is before y
+str ="axyasdfas";
+reTest(re,str);
+
+str = "axsadfdsas";
+reTest(re,str);
+
+re = /x(?=yz)/;
+str = "adsfaxyz";
+reTest(re,str);
+
+str = "avxzsda";
+reTest(re,str);
+
+
+re = /x(?!y)/; //Matche only x not before y
+str = "adxasdfas";
+reTest(re,str);
+str = "adaxysdfas";
+reTest(re,str);
+
+
+//Exampe 1:
+//Postal Code. Postal Code are 4 digit. All are number 
+
+re = /^[0-9]{4}$/;
+str = "1234";
+console.log(re.test(str));
+
+// Example Phone Number: 
+re = /^01[0-9]{9}$/;
+str = "01934342323";
+console.log(re.test(str));
+
+// if start with +8801
+re = /^\+8801[0-9]{9}$/;
+str = "+8801934342323";
+
+console.log(re.test(str));
+
+// if we want to match +88 or 88 optional 
+re = /^(\+)?(88)?01[0-9]{9}$/;
+
+str = "01934342323";
+console.log(re.test(str));
+
+str = "8801934342323";
+console.log(re.test(str));
+
+str = "+8801934342323";
+console.log(re.test(str));
+
+str = "880193434232";
+console.log(re.test(str));
+
+
+
+//Email Address Pattern
+re = /^([a-zA-Z0-9]\.?)+[^\.]@([a-zA-Z0-9]\.?)+[^\.]$/;
+str = "123.sadf@gmail.com";
+console.log(re.test(str));
+
+
+re = /^([a-zA-Z0-9]\.?)+[^\.]@([a-zA-Z0-9]\.?)+[^\.]$/;
+str = "123.saf@gmail.com.bd";
+console.log(re.test(str));
