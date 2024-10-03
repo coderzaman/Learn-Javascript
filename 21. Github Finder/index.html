@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Hub Finder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .error {
+            background: red;
+        }
+
+        .style_head {
+            border-radius: 0 0 10px 10px;
+            font-family: "Caveat", cursive;
+            font-weight: 700;
+        }
+
+        .search_bg {
+            padding: 20px;
+            border-radius: 10px;
+            font-family: "Fredoka", sans-serif;
+            color: #202020;
+        }
+
+        .img-sec a {
+            text-decoration: none;
+            
+        }
+
+        .badges span {
+            padding: 7px 15px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+
+
+
+<body style="background-color: #202020;">
+
+    <div class="container">
+        <div class="row">
+            <h3 class="fs-2  p-2 shadow style_head text-bg-light text-center">GITHUB FINDER</h3>
+        </div>
+    </div>
+    
+    
+    <div class="container">
+        <div class="row search_bg shadow text-bg-light">
+            <h4 class="fs-3 mb-0">Search GITHUB Users</h4>
+            <p>Enter a username to fetch user profile and repos</p>
+            <hr><br>
+            <input type="text" class="form-control" id="serchUserName" placeholder="Enter User Name">
+            <button class="btn btn-dark mt-3" id="serchBtn">Search</button>
+        </div>
+    </div>
+    
+    </div>
+    <div class="container userDetails ">
+        
+    </div>
+    <div class="container not_found"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <p></p>
+</body>
+
+</html>
