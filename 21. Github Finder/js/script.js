@@ -58,8 +58,6 @@ async function getUserObject(file) {
 }
 
 async function getUser(username) {
-
-    console.log(username);
     let usrDet = await getUserObject(`https://api.github.com/users/${username}`);
 
     if (usrDet.message === "Not Found") {

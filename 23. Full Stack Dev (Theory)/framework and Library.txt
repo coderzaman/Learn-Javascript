@@ -1,0 +1,14 @@
+A framework provides rules and regulations (or guidelines) that developers follow when building an application. These rules help ensure consistency, maintainability, and best practices. It often dictates how the overall structure of the application should be organized, as well as how different components (like data, user interfaces, and logic) should interact with each other.
+
+In short, the framework sets up a foundation or blueprint for the developer to work within, but it often requires following its conventions to achieve the desired outcome efficiently.
+
+A library is a collection of pre-built functions or modules that you can use to solve specific problems or perform tasks. When you use a library, you are calling specific pieces of functionality as needed, rather than following a structured set of rules like a framework.
+
+For example, in JavaScript:
+
+The Math library provides functions like Math.sqrt() or Math.random() to perform mathematical operations.
+You use the functions or modules from the library when and where you need them, but you control the flow of the program.
+So, the key difference is that:
+
+A framework often dictates the structure of your application (it calls your code).
+A library is something you call to use its functionality to solve a problem.
