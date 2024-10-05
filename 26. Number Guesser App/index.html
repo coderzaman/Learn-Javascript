@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expression Validation</title>
+    <title>Number Guesser</title>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -12,7 +12,10 @@
     <style>
         body {
             font-family: "Caveat", cursive;
+            background-color: rgb(27, 27, 27);
         }
+
+
         .bghead {
             border-radius: 0 0 30px 30px;
             background-color: rgb(239, 237, 255);
@@ -30,13 +33,18 @@
             background-color: rgb(239, 237, 255);
             border: 1px solid rgb(221, 221, 221);
         }
+        .normal{
+            background-color: rgb(239, 237, 255);
 
+        }
         .valid {
             background-color: green;
+            color: #fff;
         }
 
         .notValid {
             background-color: rgb(255, 66, 66);
+            color: #fff;
         }
     </style>
 </head>
@@ -48,7 +56,7 @@
     <div class="container ">
         <div class="row">
             <div class="col-12 cart-head-left py-3 bghead shadow">
-                <h4 class="fs-1 fw-bold text-center">Expression Validation</h4>
+                <h4 class="fs-1 fw-bold text-center">Number Guesser Game</h4>
             </div>
         </div>
     </div>
@@ -56,30 +64,23 @@
     <div class="container my-2 cart-head-left py-3 bgbody shadow">
         <div class="row">
             <div class="col-12 m-auto">
-                <h3 class="text-center">Check Your Credential Valid or Not</h3>
-                <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio iste modi
-                    dicta dolor enim</p>
+                <h3 class="text-center">Check your Luck</h3>
+                <p class="text-center text-info"><b>Guess a Number Between 1 and 10!</b></p>
             </div>
         </div>
         <div class="row ">
-            <div class="col-8 m-auto">
-                <label for="sel-option" class="mb-1">Select Your Option</label>
-                <select class="form-control" id="sel-option">
-                    <option value="email">Email</option>
-                    <option value="postalCode">Postal Code</option>
-                    <option value="phoneNumber">Phone Number</option>
-                    <option value="password">Password</option>
-                    <option value="name">Name</option>
-                    <option value="userName">User Name</option>
-                </select>
-                <label for="user-input" class="mt-3 mb-1">Enter Your Input</label>
-                <label for="user-input" id="requiredField" style="float: right; font-size: 14px; font-weight: bold; display: none;" class="mt-3 mb-1 text-danger">* Filled Required</label>
-                <input id="user-input" class="form-control" type="text">
+            <div class="col-8 m-auto text-center">
+                <label for="user-input" id="requiredField"
+                    style=" text-align:center; font-size: 15px; font-weight: bold; display: none;"
+                    class="mt-2 mb-1 text-danger text-center">* Filled Required</label>
+                <input id="user-input" class="form-control text-center mt-3 mb-1" type="number"
+                    placeholder="Enter Your Number">
             </div>
         </div>
         <div class="row">
             <div class="col-12 text-center mt-3">
-                <button class="btn btn-dark" id="check-btn">Check</button>
+                <button class="btn btn-dark" id="play-btn">Play </button>
+                <button class="btn btn-dark" id="restart-btn" disabled>Restart </button>
             </div>
         </div>
     </div>
